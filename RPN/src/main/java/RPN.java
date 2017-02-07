@@ -24,7 +24,7 @@ public class RPN {
                         break;
                     case "-":
                         System.out.println("subtract operation");
-                        stack.push(-stack.pop() + stack.pop());
+                        stack.push(stack.pop() - stack.pop()); 
                         break;
                     case "*":
                         System.out.println("multiplication operation");
@@ -32,7 +32,7 @@ public class RPN {
                         break;
                     case "/":
                         System.out.println("division operation");
-                        double divElement = stack.pop();
+                        double divElement = stack.pop(); //
                         stack.push(stack.pop() / divElement);
                         break;
                     case "exit":
